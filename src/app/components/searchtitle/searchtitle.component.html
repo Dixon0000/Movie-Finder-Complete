@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Movie Finder</h1>
+  
+    <form>
+      <div class="form-group">
+        <input type="text" name="movie-name" class="form-control" #moviename placeholder="Enter movie name">
+      </div>
+  
+      <button (click)="getMovieDetails(moviename.value)" type="submit" class="btn btn-primary mt-2"> Get Movie Details</button>
+    </form>
+  
+    <div class="row bg-light mt-4 p-4" *ngIf="movieData">
+      <div class="col-sm-4">
+        <h3>{{movieData.Error}}</h3>
+        <div *ngIf="movieData.Title">
+          <img [src]="movieData.Poster" alt="Movie poster" (error)="setDefaultPoster()">
+        </div>      
+      </div>
+  
+      <div class="col-sm-8">
+        <div *ngIf="movieData.Title" class="movie-details">
+          <h1>{{movieData.Title}}</h1>
+          <h2>Director: {{movieData.Director}}</h2>
+          <h2>Year: {{movieData.Year}}</h2>
+        </div>
+      </div>      
+    </div>
+  </div>
+  

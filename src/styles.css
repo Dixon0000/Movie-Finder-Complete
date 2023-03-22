@@ -1,0 +1,150 @@
+/* Existing CSS */
+.container {
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 50%;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: 2px solid #2196f3;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  border: none;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: #0069d9;
+}
+
+/* New CSS */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  padding: 8px 16px;
+}
+
+.nav-item:hover {
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.alert {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card {
+  margin-bottom: 20px;
+  margin-top: 1in; 
+}
+
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-sm-4 {
+  flex: 0 0 calc(33.3333% - 20px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .col-sm-4 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.row.bg-light {
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-details {
+  text-align: center;
+}
+
+
+/* ... */
+/* Pagination buttons */
+.btn-pagination {
+  font-size: 1.2rem; /* Smaller font size */
+  padding: 8px 12px; /* Smaller padding */
+  border-radius: 5px;
+  background-color: #2196f3;
+  border: none;
+  transition: all 0.3s ease;
+  color: white;
+  margin-bottom: 2in; /* Add margin to move buttons 2 inches from the bottom */
+}
+
+.btn-pagination:hover {
+  cursor: pointer;
+  background-color: #0069d9;
+}
+
+.btn-pagination:not(:last-child) {
+  margin-right: 10px; /* Add space between buttons */
+}
+
+/* Center pagination buttons */
+.text-center {
+  text-align: center;
+}
+/* ... */
